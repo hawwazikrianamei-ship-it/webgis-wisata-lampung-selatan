@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Objek Wisata Alam di Lampung Selatan</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <i class="fas fa-map-marked-alt"></i>
+        <span>WisataLamsel</span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+        <li><a href="ObjekWisataLamsel_Data/pages/webgis.html"><i class="fas fa-map"></i> Peta GIS</a></li>
+        <li><a href="ObjekWisataLamsel_Data/pages/biodata.html"><i class="fas fa-user"></i> Profil</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-waves">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🌊 Kabupaten Lampung Selatan</div>
+      <h1 class="hero-title">Objek Wisata Alam<br/><span>di Lampung Selatan</span></h1>
+      <p class="hero-desc">Jelajahi 40 destinasi wisata alam memukau dari pantai berpasir putih, pulau-pulau eksotis, air terjun tersembunyi, hingga gunung berapi bersejarah.</p>
+      <div class="hero-btns">
+        <a href="ObjekWisataLamsel_Data/pages/webgis.html" class="btn-primary"><i class="fas fa-map-marked-alt"></i> Buka Peta Interaktif</a>
+        <a href="#wisata" class="btn-outline"><i class="fas fa-compass"></i> Lihat Wisata</a>
+      </div>
+    </div>
+    <div class="hero-scroll"><span></span></div>
+  </section>
+
+  <!-- STATISTIK -->
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-umbrella-beach"></i></div>
+        <div class="stat-number" data-target="22">0</div>
+        <div class="stat-label">Pantai & Pulau</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-water"></i></div>
+        <div class="stat-number" data-target="7">0</div>
+        <div class="stat-label">Air Terjun</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-mountain"></i></div>
+        <div class="stat-number" data-target="4">0</div>
+        <div class="stat-label">Gunung & Bukit</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-map-pin"></i></div>
+        <div class="stat-number" data-target="40">0</div>
+        <div class="stat-label">Total Objek Wisata</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINASI UNGGULAN -->
+  <section class="wisata-section" id="wisata">
+    <div class="section-header">
+      <span class="section-tag">Destinasi Populer</span>
+      <h2>Jelajahi Keindahan Alam</h2>
+      <p>Temukan pesona wisata alam Lampung Selatan yang menakjubkan</p>
+    </div>
+
+    <!-- FILTER -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="Pantai">🏖 Pantai</button>
+      <button class="filter-btn" data-filter="Pulau">🏝 Pulau</button>
+      <button class="filter-btn" data-filter="Air Terjun">💧 Air Terjun</button>
+      <button class="filter-btn" data-filter="Gunung/Bukit">⛰ Gunung/Bukit</button>
+      <button class="filter-btn" data-filter="Lainnya">🌿 Lainnya</button>
+    </div>
+
+    <div class="cards-grid" id="wisataGrid">
+      <!-- diisi JS -->
+    </div>
+
+    <div class="view-more">
+      <a href="ObjekWisataLamsel_Data/pages/webgis.html" class="btn-primary">
+        <i class="fas fa-map"></i> Lihat Semua di Peta Interaktif
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Siap Menjelajahi Lampung Selatan?</h2>
+      <p>Buka peta interaktif WebGIS untuk menemukan lokasi tepat setiap objek wisata</p>
+      <a href="ObjekWisataLamsel_Data/pages/webgis.html" class="btn-primary large">
+        <i class="fas fa-map-marked-alt"></i> Buka Peta WebGIS
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <i class="fas fa-map-marked-alt"></i>
+        <span>WisataLamsel WebGIS</span>
+        <p>Peta Interaktif Objek Wisata Alam<br/>Kabupaten Lampung Selatan</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+        <a href="ObjekWisataLamsel_Data/pages/webgis.html"><i class="fas fa-map"></i> Peta GIS</a>
+        <a href="ObjekWisataLamsel_Data/pages/biodata.html"><i class="fas fa-user"></i> Profil</a>
+      </div>
+      <div class="footer-info">
+        <h4>Dibuat Oleh</h4>
+        <p><strong>Hawwa Zikriana Meisy</strong></p>
+        <p>NPM: 2313034050</p>
+        <p>Pendidikan Geografi</p>
+        <p>Universitas Lampung</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 WebGIS Objek Wisata Alam Lampung Selatan </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
